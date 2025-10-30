@@ -1,5 +1,7 @@
 import cv2
 import numpy as np
+
+
 img_bgr = cv2.imread("image.jpg", cv2.IMREAD_COLOR)
 img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)
 img = cv2.resize(img_rgb, (512, 512), interpolation=cv2.INTER_AREA)
